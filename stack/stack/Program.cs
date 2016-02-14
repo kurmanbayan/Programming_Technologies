@@ -19,6 +19,8 @@ namespace stack
             dir.Push(path);
             while (dir.Count > 0)
             {
+                Console.BackgroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 string[] subDir = Directory.GetDirectories(dir.Pop());
                 foreach (string q in subDir)
                 {
