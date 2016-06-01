@@ -19,17 +19,24 @@ namespace classStudent
             this.surname = surname;
             this.age = age;
             this.id = id;
+        
+        }
+        public Student()
+        {
+
         }
         public override string ToString()
         {
-            return "name: " + this.name + "; surname: " + this.surname + "; age: " + this.age + "; this.id: " + id;
+            return "name: " + this.name + "; surname: " + this.surname + "; age: " + this.age + "; id: " + id;
         }
     }
+            
     class Program
     {
         static void Main(string[] args)
         {
-            Student firstStudent = new Student("Ayan", "Kurmanbay", 18, "15BD02093");
+            Student firstStudent = new Student("Ayan", "Kurmanbay", "15BD02093");
+            Student s = new Student();
             Console.WriteLine(firstStudent);
             Console.ReadKey();
         }

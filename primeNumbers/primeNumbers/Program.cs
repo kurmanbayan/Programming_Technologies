@@ -20,15 +20,19 @@ namespace primeNumbers
             {
                 for (int j = 2; j <= Math.Sqrt(a[i]); j++)
                 {
-                    if (a[i]%j==0 && a[i] != j)
+                    if (a[i] % j == 0 && a[i] != j)
                     {
                         a[i] = 0;
                         break;
                     }
                 }
-                if (a[i]!=0 && a[i]!=1)
+                if (a[i] != 0 && a[i] != 1)
                 {
                     Console.WriteLine(" " + a[i] + " ");
+                }
+                else { 
+                    Console.WriteLine("Error");
+                    break;
                 }
             }
             Console.ReadKey();

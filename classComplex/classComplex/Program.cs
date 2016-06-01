@@ -16,7 +16,12 @@ namespace classComplex
         }
         public static Complex operator +(Complex x, Complex y)
         {
-            Complex z = new Complex(x.a * y.b + y.a * x.b, x.b * y.b);
+            if (x.b==y.b)
+            {
+                Complex e = new Complex(x.a + y.a, x.b);
+                return e;
+            }
+                Complex z = new Complex(x.a * y.b + y.a * x.b, x.b * y.b);
             return z;
         }
         public override string ToString()

@@ -18,7 +18,7 @@ namespace maxmin
 
             string[] array = first.ReadLine().Split();
             int mn = int.Parse(array[0]);
-            int mx = int.Parse(array[1]);
+            int mx = int.Parse(array[0]);
 
 
             for (int i = 0; i < array.Length; i++)
